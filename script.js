@@ -261,9 +261,12 @@ function createCard(dessert, index) {
                     ${dessert.country}
                 </span>
 
-                <span class="dessert-emoji">
-                    ${dessert.emoji}
-                </span>
+                <img
+                    class="dessert-photo"
+                    src="${dessert.image}"
+                    alt="${dessert.name}"
+                    loading="lazy"
+>
             </div>
 
             <div class="card-body">
