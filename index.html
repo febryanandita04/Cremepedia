@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Crèmepedia | A Sweet Little Encyclopedia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="announcement">
+        A LITTLE ENCYCLOPEDIA OF SWEET WONDERS ♡
+    </div>
+
+    <header>
+        <a href="#home" class="logo">Crèmepedia<span>✳</span></a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#collection">The Collection</a>
+            <a href="#about">Our Little Library</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+                <p class="eyebrow">WELCOME TO OUR SWEET LITTLE WORLD</p>
+
+                <h1>
+                    Every dessert<br>
+                    has a <em>story.</em>
+                </h1>
+
+                <p class="hero-description">
+                    From flaky French pastries to delicate Japanese cakes,
+                    discover the history, flavours, and little secrets behind
+                    the world's sweetest creations.
+                </p>
+
+                <a href="#collection" class="explore-button">
+                    Explore the sweet world ↗
+                </a>
+
+                <p class="little-note">
+                    ♡ Made for the curious and the cake lovers.
+                </p>
+            </div>
+
+            <div class="hero-art">
+                <div class="round-stamp">
+                    A TASTE<br>OF HISTORY
+                </div>
+
+                <div class="hero-cake">🍰</div>
+
+                <span class="sparkle sparkle-one">✧</span>
+                <span class="sparkle sparkle-two">✳</span>
+
+                <p class="cake-caption">
+                    a slice of something lovely
+                </p>
+
+                <div class="ribbon">
+                    baked with curiosity ♡
+                </div>
+            </div>
+
+        </section>
+
+        <!-- INTRODUCTION -->
+        <section class="intro" id="about">
+            <span>✿</span>
+
+            <p>
+                Not a bakery, but a little library of pastries.<br>
+                <em>Every recipe has a past. Every bite has a story.</em>
+            </p>
+
+            <span>✿</span>
+        </section>
+
+        <!-- DESSERT COLLECTION -->
+        <section class="collection" id="collection">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">THE SWEET ARCHIVE</p>
+
+                    <h2>
+                        Meet the <em>classics.</em>
+                    </h2>
+
+                    <p class="section-description">
+                        A tiny tour through desserts, traditions,
+                        and delicious discoveries.
+                    </p>
+                </div>
+
+                <p class="handwriting">♡ bon appétit ♡</p>
+            </div>
+
+            <!-- SEARCH -->
+            <div class="search-area">
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Search a pastry or country..."
+                    aria-label="Cari dessert"
+                >
+            </div>
+
+            <!-- FILTER -->
+            <div class="filters">
+                <button class="filter active" data-region="All">
+                    All sweets
+                </button>
+
+                <button class="filter" data-region="Europe">
+                    Europe
+                </button>
+
+                <button class="filter" data-region="Asia">
+                    Asia
+                </button>
+
+                <button class="filter" data-region="Americas">
+                    Americas
+                </button>
+            </div>
+
+            <!-- CARDS WILL APPEAR HERE -->
+            <div class="dessert-grid" id="dessertGrid"></div>
+
+            <p class="no-results" id="noResults" hidden>
+                No sweet stories found. Try another search ♡
+            </p>
+
+        </section>
+
+        <!-- QUOTE -->
+        <section class="quote-section">
+            <span>✧</span>
+
+            <p>
+                A dessert is more than a recipe.<br>
+                It is a little piece of where it came from.
+            </p>
+
+            <span>✧</span>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <a href="#home" class="logo">Crèmepedia<span>✳</span></a>
+
+        <p>The art, history & magic of pastries.</p>
+
+        <small>
+            A little digital library, made with curiosity and ♡
+        </small>
+    </footer>
+
+    <!-- POP-UP DETAIL -->
+    <dialog id="dessertDialog">
+        <button id="closeDialog" class="close-button" aria-label="Tutup">
+            ×
+        </button>
+
+        <div id="dialogContent"></div>
+    </dialog>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
